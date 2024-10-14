@@ -3,8 +3,6 @@
 #include "Duck.h"
 #include "ModelDuck.h"
 #include "MallardDuck.h"
-#include "RubberDuck.h"
-#include "RedheadDuck.h"
 #include "FlyRocketPower.h"
 
 

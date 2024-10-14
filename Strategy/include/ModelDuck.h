@@ -1,6 +1,8 @@
 #ifndef STRATEGY_MODELDUCK_H
 #define STRATEGY_MODELDUCK_H
 
+#include <string>
+
 #include "Duck.h"
 #include "FlyNoWay.h"
 #include "MuteQuack.h"

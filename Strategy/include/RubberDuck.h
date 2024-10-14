@@ -1,6 +1,8 @@
 #ifndef STRATEGY_RUBBERDUCK_H
 #define STRATEGY_RUBBERDUCK_H
 
+#include <string>
+
 #include "Duck.h"
 #include "FlyNoWay.h"
 #include "Squeak.h"

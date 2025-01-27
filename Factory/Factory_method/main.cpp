@@ -6,33 +6,34 @@
 #include "ChicagoPizzaStore.h"
 
 
-int main() {  
-  std::cout << "Factory method" << "\n\n";
+int main() {
+    std::cout << "Factory method" << "\n\n";
 
-  try {
-    PizzaStore *nyPizzaStore = new NYPizzaStore;
-    PizzaStore *chicagoStore = new ChicagoPizzaStore;
+    try {
+        PizzaStore* nyPizzaStore = new NYPizzaStore;
+        PizzaStore* chicagoStore = new ChicagoPizzaStore;
 
-    Pizza *pizza = nyPizzaStore->orderPizza("cheese");
-    std::cout << ">>> Ethan ordered a " + pizza->getName() + "\n";
+        Pizza* pizza = nyPizzaStore->orderPizza("cheese");
+        std::cout << ">>> Ethan ordered a " + pizza->getName() + "\n";
 
-    delete pizza;
-    pizza = nullptr;
+        delete pizza;
+        pizza = nullptr;
 
-    std::cout << "\n";
+        std::cout << "\n";
 
-    pizza = chicagoStore->orderPizza("cheese");
-    std::cout << ">>> Joel ordered a " << pizza->getName() << "\n";
+        pizza = chicagoStore->orderPizza("cheese");
+        std::cout << ">>> Joel ordered a " << pizza->getName() << "\n";
 
-    delete pizza;
+        delete pizza;
 
 
-    return EXIT_SUCCESS;
+        return EXIT_SUCCESS;
 
-  } catch (std::exception &e) {
-    std::cerr << e.what() << std::endl;
-    return EXIT_FAILURE;
-  }
+    }
+    catch (std::exception& e) {
+        std::cerr << e.what() << std::endl;
+        return EXIT_FAILURE;
+    }
 }
 
 

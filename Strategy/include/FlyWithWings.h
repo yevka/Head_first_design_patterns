@@ -5,8 +5,8 @@
 
 
 class FlyWithWings : public IFlyBehavior {
- public:
-  std::string fly() const { return "I'm flying!"; }
+public:
+    std::string fly() const { return "I'm flying!"; }
 };
 
 

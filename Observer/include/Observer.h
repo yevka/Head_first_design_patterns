@@ -4,12 +4,12 @@
 #include <string>
 
 class Observer {
- public:
-  virtual ~Observer() {}
+public:
+    virtual ~Observer() {}
 
-  virtual void update(const std::string& temperature,
-                      const std::string& humidity,
-                      const std::string& pressure) = 0;
+    virtual void update(const std::string& temperature,
+        const std::string& humidity,
+        const std::string& pressure) = 0;
 };
 
 #endif  // OBSERVER_H

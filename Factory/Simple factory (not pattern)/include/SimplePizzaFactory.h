@@ -6,8 +6,8 @@
 class IPizza;
 
 class SimplePizzaFactory {
- public:
-  IPizza *createPizza(const std::string &type);
+public:
+    IPizza* createPizza(const std::string& type);
 };
 
 #endif //FACTORY_SIMPLEPIZZAFACTORY_H

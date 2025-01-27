@@ -6,13 +6,13 @@
 #include "Pizza.h"
 
 class PepperoniPizza : public Pizza {
- public:
-  virtual ~PepperoniPizza() = default;
+public:
+    virtual ~PepperoniPizza() = default;
 
-  std::string prepare() override { return "Prepare Pepperoni pizza"; }
-  std::string bake() override { return "Bake Pepperoni pizza"; }
-  std::string cut() override { return "Cut Pepperoni pizza"; }
-  std::string box() override { return "Box Pepperoni pizza"; }
+    std::string prepare() override { return "Prepare Pepperoni pizza"; }
+    std::string bake() override { return "Bake Pepperoni pizza"; }
+    std::string cut() override { return "Cut Pepperoni pizza"; }
+    std::string box() override { return "Box Pepperoni pizza"; }
 };
 
 #endif //FACTORY_PEPPERONIPIZZA_H

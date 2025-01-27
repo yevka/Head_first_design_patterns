@@ -8,32 +8,32 @@
 
 
 class Duck {
- public:
-  virtual ~Duck() {}
+public:
+    virtual ~Duck() {}
 
-  virtual std::string display() const { return std::string(); }
+    virtual std::string display() const { return std::string(); }
 
-  void setFlyBehavior(IFlyBehavior *flyBehavior) { flyBehavior_ = flyBehavior; }
+    void setFlyBehavior(IFlyBehavior* flyBehavior) { flyBehavior_ = flyBehavior; }
 
-  void setQuackBehavior(IQuackBehavior *quackBehavior) { quackBehavior_ = quackBehavior; }
+    void setQuackBehavior(IQuackBehavior* quackBehavior) { quackBehavior_ = quackBehavior; }
 
-  IFlyBehavior *getFlyBehavior() { return flyBehavior_; }
+    IFlyBehavior* getFlyBehavior() { return flyBehavior_; }
 
-  IQuackBehavior *getQuackBehavior() { return quackBehavior_; }
+    IQuackBehavior* getQuackBehavior() { return quackBehavior_; }
 
-  std::string swim() const { return "All ducks float, even decoys!"; }
+    std::string swim() const { return "All ducks float, even decoys!"; }
 
-  std::string performQuack() const {
-    return quackBehavior_ ? quackBehavior_->quack() : "";
-  }
+    std::string performQuack() const {
+        return quackBehavior_ ? quackBehavior_->quack() : "";
+    }
 
-  std::string performFly() const {
-    return flyBehavior_ ? flyBehavior_->fly() : "";
-  }
+    std::string performFly() const {
+        return flyBehavior_ ? flyBehavior_->fly() : "";
+    }
 
- private:
-  IFlyBehavior *flyBehavior_ = nullptr;
-  IQuackBehavior *quackBehavior_ = nullptr;
+private:
+    IFlyBehavior* flyBehavior_ = nullptr;
+    IQuackBehavior* quackBehavior_ = nullptr;
 };
 
 

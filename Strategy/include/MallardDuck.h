@@ -7,17 +7,17 @@
 
 
 class MallardDuck : public Duck {
- public:
-  MallardDuck() : Duck() {
-    setFlyBehavior(&flyWithWings_);
-    setQuackBehavior(&quack_);
-  }
+public:
+    MallardDuck() : Duck() {
+        setFlyBehavior(&flyWithWings_);
+        setQuackBehavior(&quack_);
+    }
 
-  std::string display() const override { return "I'm a real Mallard duck!"; }
+    std::string display() const override { return "I'm a real Mallard duck!"; }
 
- private:
-  FlyWithWings flyWithWings_;
-  Quack quack_;
+private:
+    FlyWithWings flyWithWings_;
+    Quack quack_;
 };
 
 

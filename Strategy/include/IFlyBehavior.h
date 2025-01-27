@@ -5,10 +5,10 @@
 
 
 class IFlyBehavior {
- public:
-  virtual ~IFlyBehavior() {}
+public:
+	virtual ~IFlyBehavior() {}
 
-  virtual std::string fly() const = 0;
+	virtual std::string fly() const = 0;
 };
 
 

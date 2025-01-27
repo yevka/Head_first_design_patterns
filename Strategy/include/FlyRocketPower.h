@@ -7,8 +7,8 @@
 
 
 class FlyRocketPower : public IFlyBehavior {
- public:
-  std::string fly() const override { return "I'm flying with a rocket!"; }
+public:
+    std::string fly() const override { return "I'm flying with a rocket!"; }
 };
 
 

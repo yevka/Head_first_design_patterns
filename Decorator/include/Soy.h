@@ -4,12 +4,12 @@
 #include "CondimentDecorator.h"
 
 class Soy : public CondimentDecorator {
- public:
-  Soy(Beverage *beverage) : CondimentDecorator(beverage) {}
+public:
+    Soy(Beverage* beverage) : CondimentDecorator(beverage) {}
 
-  size_t cost() const override { return 15 + CondimentDecorator::cost(); }
+    size_t cost() const override { return 15 + CondimentDecorator::cost(); }
 
-  std::string getDescription() const override { return CondimentDecorator::getDescription() + ", Soy"; }
+    std::string getDescription() const override { return CondimentDecorator::getDescription() + ", Soy"; }
 };
 
 #endif //DECORATOR_SOY_H

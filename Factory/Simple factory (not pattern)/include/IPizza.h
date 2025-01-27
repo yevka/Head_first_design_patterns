@@ -4,13 +4,13 @@
 #include <string>
 
 class IPizza {
- public:
-  virtual ~IPizza() {}
+public:
+    virtual ~IPizza() {}
 
-  virtual std::string prepare() = 0;
-  virtual std::string bake() = 0;
-  virtual std::string cut() = 0;
-  virtual std::string box() = 0;
+    virtual std::string prepare() = 0;
+    virtual std::string bake() = 0;
+    virtual std::string cut() = 0;
+    virtual std::string box() = 0;
 };
 
 #endif //FACTORY_INTERFACE_PIZZA_H

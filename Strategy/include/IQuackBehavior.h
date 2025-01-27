@@ -5,10 +5,10 @@
 
 
 class IQuackBehavior {
- public:
-  virtual ~IQuackBehavior() {}
+public:
+	virtual ~IQuackBehavior() {}
 
-  virtual std::string quack() const = 0;
+	virtual std::string quack() const = 0;
 };
 
 

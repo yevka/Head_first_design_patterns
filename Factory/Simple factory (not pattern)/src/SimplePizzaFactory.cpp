@@ -8,16 +8,19 @@
 #include "ClamPizza.h"
 #include "PepperoniPizza.h"
 
-IPizza *SimplePizzaFactory::createPizza(const std::string &type) {
-  if (type == "cheese") {
-    return new CheesePizza;
-  } else if (type == "veggie") {
-    return new VeggiePizza;
-  } else if (type == "clam") {
-    return new ClamPizza;
-  } else if (type == "pepperoni") {
-    return new PepperoniPizza;
-  }
+IPizza* SimplePizzaFactory::createPizza(const std::string& type) {
+    if (type == "cheese") {
+        return new CheesePizza;
+    }
+    else if (type == "veggie") {
+        return new VeggiePizza;
+    }
+    else if (type == "clam") {
+        return new ClamPizza;
+    }
+    else if (type == "pepperoni") {
+        return new PepperoniPizza;
+    }
 
-  return nullptr;
+    return nullptr;
 }

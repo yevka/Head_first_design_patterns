@@ -8,7 +8,7 @@ class Pizza;
 class ChicagoPizzaStore final : public  PizzaStore {
 public:
     virtual ~ChicagoPizzaStore();
-    Pizza *createPizza(const std::string &type) override;
+    Pizza* createPizza(const std::string& type) override;
 };
 
 #endif //FACTORY_CHICAGO_PIZZASTORE_H

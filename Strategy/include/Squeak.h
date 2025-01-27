@@ -7,8 +7,8 @@
 
 
 class Squeak : public IQuackBehavior {
- public:
-  std::string quack() const override { return "Squeak!"; }
+public:
+    std::string quack() const override { return "Squeak!"; }
 };
 
 

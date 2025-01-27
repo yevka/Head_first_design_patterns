@@ -9,17 +9,17 @@
 
 
 class RubberDuck : public Duck {
- public:
-  RubberDuck() : Duck() {
-    setFlyBehavior(&flyNoWay_);
-    setQuackBehavior(&squeak_);
-  }
+public:
+    RubberDuck() : Duck() {
+        setFlyBehavior(&flyNoWay_);
+        setQuackBehavior(&squeak_);
+    }
 
-  std::string display() const override { return "I'm a real Rubber duck!"; }
+    std::string display() const override { return "I'm a real Rubber duck!"; }
 
- private:
-  FlyNoWay flyNoWay_;
-  Squeak squeak_;
+private:
+    FlyNoWay flyNoWay_;
+    Squeak squeak_;
 };
 
 

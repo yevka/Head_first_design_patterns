@@ -7,20 +7,18 @@
 #include "FlyNoWay.h"
 #include "MuteQuack.h"
 
-
 class ModelDuck : public Duck {
- public:
-  ModelDuck() : Duck() {
-    setFlyBehavior(&flyNoWay_);
-    setQuackBehavior(&muteQuack_);
-  }
+public:
+    ModelDuck() : Duck() {
+        setFlyBehavior(&flyNoWay_);
+        setQuackBehavior(&muteQuack_);
+    }
 
-  std::string display() const override { return "I'm a model duck!"; }
+    std::string display() const override { return "I'm a model duck!"; }
 
 private:
     FlyNoWay flyNoWay_;
     MuteQuack muteQuack_;
 };
-
 
 #endif //STRATEGY_MODELDUCK_H

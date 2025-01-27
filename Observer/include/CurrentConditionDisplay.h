@@ -8,21 +8,21 @@
 #include "DisplayElement.h"
 
 class CurrentConditionDisplay : public Observer, public DisplayElement {
- public:
-  CurrentConditionDisplay() = default;
+public:
+    CurrentConditionDisplay() = default;
 
-  CurrentConditionDisplay(Subject* weatherData);
+    CurrentConditionDisplay(Subject* weatherData);
 
-  void update(const std::string& temperature,
-              const std::string& humidity,
-              const std::string& pressure) override;
+    void update(const std::string& temperature,
+        const std::string& humidity,
+        const std::string& pressure) override;
 
-  void display() override;
+    void display() override;
 
- private:
-  std::string temperature_;
-  std::string humidity_;
-  Subject* weatherData_ = nullptr;
+private:
+    std::string temperature_;
+    std::string humidity_;
+    Subject* weatherData_ = nullptr;
 };
 
 #endif  // CURRENT_CONDITION_DISPLAY_H

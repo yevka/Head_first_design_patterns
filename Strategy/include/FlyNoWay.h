@@ -7,8 +7,8 @@
 
 
 class FlyNoWay : public IFlyBehavior {
- public:
-  std::string fly() const override { return "I can't fly!"; }
+public:
+    std::string fly() const override { return "I can't fly!"; }
 };
 
 

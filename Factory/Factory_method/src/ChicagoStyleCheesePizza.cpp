@@ -2,9 +2,9 @@
 
 ChicagoStyleCheesePizza::ChicagoStyleCheesePizza() :
     Pizza("Chicago Style Deep Dish Cheese ",
-          "Extra Thick Crust Dough",
-          "Plum Tomato Sauce",
-{"Shredded", "Mozzarella", "Cheese"})
+        "Extra Thick Crust Dough",
+        "Plum Tomato Sauce",
+        { "Shredded", "Mozzarella", "Cheese" })
 
 {
 }

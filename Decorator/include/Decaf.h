@@ -4,10 +4,10 @@
 #include "Beverage.h"
 
 class Decaf : public Beverage {
- public:
-  Decaf() { ::Beverage::description = "Decaf"; }
+public:
+    Decaf() { ::Beverage::description = "Decaf"; }
 
-  size_t cost() const override { return 105; }
+    size_t cost() const override { return 105; }
 };
 
 #endif //DECORATOR_DECAF_H

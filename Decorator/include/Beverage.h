@@ -4,16 +4,16 @@
 #include <string>
 
 class Beverage {
- public:
-  Beverage() = default;
-  virtual ~Beverage() {}
+public:
+    Beverage() = default;
+    virtual ~Beverage() {}
 
-  virtual std::string getDescription() const { return description; }
+    virtual std::string getDescription() const { return description; }
 
-  virtual size_t cost() const = 0;
+    virtual size_t cost() const = 0;
 
- protected:
-  std::string description = "Unknown Beverage";
+protected:
+    std::string description = "Unknown Beverage";
 };
 
 #endif //DECORATOR_BEVERAGE_H

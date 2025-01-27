@@ -1,14 +1,14 @@
 #include "Pizza.h"
 
-Pizza::Pizza(const std::string &name
-             ,const std::string &dough
-             ,const std::string &sauce
-             ,const std::vector<std::string> &toppings) :
+Pizza::Pizza(const std::string& name
+    , const std::string& dough
+    , const std::string& sauce
+    , const std::vector<std::string>& toppings) :
 
     name_(name)
-  , dough_(dough)
-  , sauce_(sauce)
-  , toppings_(toppings)
+    , dough_(dough)
+    , sauce_(sauce)
+    , toppings_(toppings)
 {
 }
 
@@ -19,7 +19,7 @@ std::string Pizza::prepare() {
     std::string addingSauce = "Adding sauce " + sauce_ + "\n";
 
     std::string result = preparing + tossingDough + addingSauce;
-    for(auto topping : toppings_) { result += "\n\t" + topping; }
+    for (auto topping : toppings_) { result += "\n\t" + topping; }
     return result + "\n";
 }
 

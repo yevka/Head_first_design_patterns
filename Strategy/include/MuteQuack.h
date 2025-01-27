@@ -7,8 +7,8 @@
 
 
 class MuteQuack : public IQuackBehavior {
- public:
-  std::string quack() const override { return "Silence!"; }
+public:
+	std::string quack() const override { return "Silence!"; }
 };
 
 

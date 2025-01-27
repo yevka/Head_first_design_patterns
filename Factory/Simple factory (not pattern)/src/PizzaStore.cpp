@@ -7,15 +7,15 @@
 
 PizzaStore::PizzaStore() : factory_(nullptr) {}
 
-PizzaStore::PizzaStore(SimplePizzaFactory *factory) : factory_(factory) {}
+PizzaStore::PizzaStore(SimplePizzaFactory* factory) : factory_(factory) {}
 
-IPizza *PizzaStore::orderPizza(const std::string &type) {
-  IPizza *pizza = factory_->createPizza(type);
-  if (pizza != nullptr) {
-    std::cout << pizza->prepare() << std::endl;
-    std::cout << pizza->bake() << std::endl;
-    std::cout << pizza->cut() << std::endl;
-    std::cout << pizza->box() << std::endl;
-  }
-  return pizza;
+IPizza* PizzaStore::orderPizza(const std::string& type) {
+    IPizza* pizza = factory_->createPizza(type);
+    if (pizza != nullptr) {
+        std::cout << pizza->prepare() << std::endl;
+        std::cout << pizza->bake() << std::endl;
+        std::cout << pizza->cut() << std::endl;
+        std::cout << pizza->box() << std::endl;
+    }
+    return pizza;
 }

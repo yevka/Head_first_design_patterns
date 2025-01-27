@@ -7,10 +7,10 @@
 class Pizza {
 public:
     Pizza() = default;
-    Pizza(const std::string &name
-          ,const std::string &dough
-          ,const std::string &sauce
-          ,const std::vector<std::string> &toppings);
+    Pizza(const std::string& name
+        , const std::string& dough
+        , const std::string& sauce
+        , const std::vector<std::string>& toppings);
 
     virtual ~Pizza() = default;
 

@@ -4,4 +4,4 @@
  */
 
 #define CATCH_CONFIG_MAIN
-#include "unit_test/catch.hpp"
+#include "catch.hpp"

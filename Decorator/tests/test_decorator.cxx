@@ -1,4 +1,4 @@
-#include "unit_test/catch.hpp"
+#include "catch.hpp"
 
 #include "DarkRoast.h"
 #include "Decaf.h"

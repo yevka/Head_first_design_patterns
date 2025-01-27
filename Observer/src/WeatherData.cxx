@@ -2,18 +2,6 @@
 
 #include "WeatherData.h"
 
-std::string WeatherData::getTemperature() const {
-    return temperature_;
-}
-
-std::string WeatherData::getHumidity() const {
-    return humidity_;
-}
-
-std::string WeatherData::getPressure() const {
-    return pressure_;
-}
-
 void WeatherData::measurementsChanged() {
     notifyObservers();
 }

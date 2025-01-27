@@ -1,32 +1,22 @@
-cmake_minimum_required (VERSION 3.2 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.28)
 
-project (observer CXX)
-
-# Enable C++11
-set (CMAKE_CXX_STANDARD 11)
-set (CMAKE_CXX_STANDARD_REQUIRED ON)
-
-# Configurable variables
-## Features
-set (ENABLE_TESTING ON CACHE BOOL "Enable unit tests")
-
-# Add self includes
-include_directories ("include")
-include_directories ("../ext")
-
-# Grab source directory tree
-file (GLOB_RECURSE SRC_LIST "src/*.cxx")
-
-set (MAIN "main.cxx")
+set(project_name observer) 
 
 # Configure library build
-add_executable (${CMAKE_PROJECT_NAME} ${SRC_LIST} ${MAIN})
+file (GLOB_RECURSE SRC_LIST src/*.cxx)
+if (SRC_LIST)
+    add_library(lib${project_name} ${SRC_LIST})
+    target_include_directories(lib${project_name} PUBLIC include)
+else()
+    add_library(lib${project_name} INTERFACE)
+    target_include_directories(lib${project_name} INTERFACE include)
+endif()
+
+add_executable(${project_name} main.cxx)
+target_link_libraries(${project_name} PUBLIC lib${project_name})
 
 # Add unit tests
-if (ENABLE_TESTING)
+if(ENABLE_TESTING)
     enable_testing()
     add_subdirectory (tests)
-    message (STATUS "Unit tests status: ENABLED")
-else (ENABLE_TESTING)
-    message (STATUS "Unit tests status: DISABLED")
 endif (ENABLE_TESTING)

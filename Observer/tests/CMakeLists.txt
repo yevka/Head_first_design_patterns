@@ -1,15 +1,15 @@
-cmake_minimum_required (VERSION 3.2 FATAL_ERROR)
+cmake_minimum_required (VERSION 3.28 FATAL_ERROR)
 
-# Define variables
-set (TEST_RUNNER test_runner)
-
-file (GLOB_RECURSE TEST_SRC_LIST "${CMAKE_CURRENT_SOURCE_DIR}/*.cxx")
+set (TEST_RUNNER test_${project_name})
 
 # Configure test target
-add_executable (${TEST_RUNNER} ${TEST_SRC_LIST} ${SRC_LIST})
-
-# Run tests
-add_test (
-    NAME ${TEST_RUNNER}
-    COMMAND ./${TEST_RUNNER}
+add_executable (${TEST_RUNNER}
+    test_runner.cxx
+    test_${project_name}.cxx
 )
+target_link_libraries(${TEST_RUNNER} PUBLIC
+    Catch2::Test
+    lib${project_name}
+)
+
+add_test (NAME ${TEST_RUNNER} COMMAND ./${TEST_RUNNER})

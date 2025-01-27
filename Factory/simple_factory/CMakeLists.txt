@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.28)
 
-set(project_name strategy) 
+set(project_name simple_factory) 
 
 # Configure library build
 file (GLOB_RECURSE SRC_LIST src/*.cxx)

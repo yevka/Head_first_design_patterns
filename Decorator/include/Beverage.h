@@ -1,7 +1,3 @@
-//
-// Created by Влад Евка on 9/9/16.
-//
-
 #ifndef DECORATOR_BEVERAGE_H
 #define DECORATOR_BEVERAGE_H
 

@@ -1,7 +1,3 @@
-//
-// Created by Влад Евка on 9/18/16.
-//
-
 #ifndef FACTORY_PEPPERONIPIZZA_H
 #define FACTORY_PEPPERONIPIZZA_H
 

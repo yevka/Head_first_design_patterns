@@ -1,7 +1,3 @@
-//
-// Created by Влад Евка on 9/18/16.
-//
-
 #ifndef FACTORY_CHEESEPIZZA_H
 #define FACTORY_CHEESEPIZZA_H
 

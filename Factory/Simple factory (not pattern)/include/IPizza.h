@@ -1,7 +1,3 @@
-//
-// Created by Влад Евка on 9/18/16.
-//
-
 #ifndef FACTORY_INTERFACE_PIZZA_H
 #define FACTORY_INTERFACE_PIZZA_H
 

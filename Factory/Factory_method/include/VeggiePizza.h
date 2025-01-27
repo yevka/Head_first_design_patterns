@@ -1,7 +1,3 @@
-//
-// Created by Влад Евка on 9/18/16.
-//
-
 #ifndef FACTORY_VEGGIEPIZZA_H
 #define FACTORY_VEGGIEPIZZA_H
 

@@ -1,7 +1,3 @@
-//
-// Created by Влад Евка on 18.12.16.
-//
-
 #include <iostream>
 
 #include "IPizza.h"

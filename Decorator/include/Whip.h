@@ -1,7 +1,3 @@
-//
-// Created by Влад Евка on 9/9/16.
-//
-
 #ifndef DECORATOR_WHIP_H
 #define DECORATOR_WHIP_H
 

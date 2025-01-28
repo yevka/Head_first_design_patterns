@@ -22,7 +22,6 @@ public:
         return pressure_;
     }
 
-    void measurementsChanged();
     void setMeasurements(const std::string& temperature,
         const std::string& humidity,
         const std::string& pressure);

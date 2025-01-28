@@ -2,17 +2,13 @@
 
 #include "WeatherData.h"
 
-void WeatherData::measurementsChanged() {
-    notifyObservers();
-}
-
 void WeatherData::setMeasurements(const std::string& temperature,
     const std::string& humidity,
     const std::string& pressure) {
     temperature_ = temperature;
     humidity_ = humidity;
     pressure_ = pressure;
-    measurementsChanged();
+    notifyObservers();
 }
 
 void WeatherData::registerObserver(Observer* observer) {
